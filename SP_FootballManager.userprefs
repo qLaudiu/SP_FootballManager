@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{65363FAF-412E-4BC9-8955-F3C78C2C40BB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SP_FootballManager/Program.cs">
+    <Files>
+      <File FileName="SP_FootballManager/Program.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
