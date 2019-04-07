@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SP_FootballManager
 {
-    class Player
+    public class Player
     {
         int ID;
         String Name;

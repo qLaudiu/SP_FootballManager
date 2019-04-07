@@ -1,5 +1,10 @@
-C:\Users\gyula\source\repos\SP_Project\SP_FootballManager\SP_FootballManager\bin\Debug\SP_FootballManager.exe
-C:\Users\gyula\source\repos\SP_Project\SP_FootballManager\SP_FootballManager\bin\Debug\SP_FootballManager.pdb
-C:\Users\gyula\source\repos\SP_Project\SP_FootballManager\SP_FootballManager\obj\x86\Debug\SP_FootballManager.csproj.CoreCompileInputs.cache
-C:\Users\gyula\source\repos\SP_Project\SP_FootballManager\SP_FootballManager\obj\x86\Debug\SP_FootballManager.exe
-C:\Users\gyula\source\repos\SP_Project\SP_FootballManager\SP_FootballManager\obj\x86\Debug\SP_FootballManager.pdb
+C:/Users/gyula/source/repos/SP_Project/SP_FootballManager/SP_FootballManager/bin/Debug/SP_FootballManager.exe
+C:/Users/gyula/source/repos/SP_Project/SP_FootballManager/SP_FootballManager/bin/Debug/SP_FootballManager.pdb
+C:/Users/gyula/source/repos/SP_Project/SP_FootballManager/SP_FootballManager/obj/x86/Debug/SP_FootballManager.csproj.CoreCompileInputs.cache
+C:/Users/gyula/source/repos/SP_Project/SP_FootballManager/SP_FootballManager/obj/x86/Debug/SP_FootballManager.exe
+C:/Users/gyula/source/repos/SP_Project/SP_FootballManager/SP_FootballManager/obj/x86/Debug/SP_FootballManager.pdb
+/Users/claudiu/DEV/Facultate/DP/SP_FootballManager/SP_FootballManager/obj/x86/Debug/SP_FootballManager.csproj.CoreCompileInputs.cache
+/Users/claudiu/DEV/Facultate/DP/SP_FootballManager/SP_FootballManager/obj/x86/Debug/SP_FootballManager.exe
+/Users/claudiu/DEV/Facultate/DP/SP_FootballManager/SP_FootballManager/bin/Debug/SP_FootballManager.exe
+/Users/claudiu/DEV/Facultate/DP/SP_FootballManager/SP_FootballManager/bin/Debug/SP_FootballManager.pdb
+/Users/claudiu/DEV/Facultate/DP/SP_FootballManager/SP_FootballManager/obj/x86/Debug/SP_FootballManager.pdb
