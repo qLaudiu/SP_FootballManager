@@ -1,8 +1,8 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="SP_FootballManager/Program.cs">
+﻿<Properties StartupConfiguration="{65363FAF-412E-4BC9-8955-F3C78C2C40BB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SP_FootballManager/DataLayer.cs">
     <Files>
-      <File FileName="SP_FootballManager/DataLayer.cs" Line="28" Column="19" />
-      <File FileName="SP_FootballManager/Player.cs" Line="9" Column="5" />
+      <File FileName="SP_FootballManager/DataLayer.cs" Line="1" Column="1" />
+      <File FileName="SP_FootballManager/Player.cs" Line="1" Column="1" />
       <File FileName="SP_FootballManager/IPosition.cs" Line="1" Column="1" />
       <File FileName="SP_FootballManager/Program.cs" Line="4" Column="2" />
     </Files>
@@ -13,4 +13,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SP__FootballManager PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
