@@ -37,7 +37,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="P_Atack.cs" />
+    <Compile Include="P_Deffender.cs" />
+    <Compile Include="P_GoalKeeper.cs" />
+    <Compile Include="P_Middle.cs" />
     <Compile Include="Role.cs" />
+    <Compile Include="IStaff.cs" />
+    <Compile Include="Staff.cs" />
+    <Compile Include="Staff_Members.cs" />
+    <Compile Include="Staff_Subordonate.cs" />
+    <Compile Include="Staff_Type.cs" />
+    <Compile Include="Team.cs" />
+    <Compile Include="Team_Iterator.cs" />
+    <Compile Include="Team_Selector.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
