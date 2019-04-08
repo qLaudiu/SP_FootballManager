@@ -10,6 +10,7 @@ namespace SP_FootballManager
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         int ID;
         String Name;
         int Number;
@@ -21,6 +22,8 @@ namespace SP_FootballManager
 =======
 =======
 >>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
+=======
+>>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
         private int ID { get; set; }
         public String Name { get; set; }
         public int Number { get; set; }
@@ -28,6 +31,9 @@ namespace SP_FootballManager
         public IPosition Position { get; set; }
         public int Salary { get; set; }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
+=======
 >>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
 =======
 >>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
