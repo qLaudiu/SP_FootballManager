@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SP_FootballManager
 {
-    enum Role
+    public enum Role
     {
         SS,
         CF,

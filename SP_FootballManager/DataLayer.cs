@@ -6,6 +6,26 @@ namespace SP_FootballManager
     public class DataLayer
     {
 
+        /*
+            DataLayer dataLayer = DataLayer.GetInstance();
+
+            Console.WriteLine(dataLayer.GetTeamName());
+            Console.WriteLine(dataLayer.GetTeamShortName());
+            Console.WriteLine(dataLayer.GetTeamFoundationYear());
+            Console.WriteLine(dataLayer.GetTeamClasamentPosition());
+            Console.WriteLine(dataLayer.GetTeamFoundationYear());
+            Console.WriteLine(dataLayer.GetTeamBudget());
+
+            foreach (Player p in dataLayer.GetAllPlayers())
+            {
+                Console.WriteLine(p);
+            }
+
+            Player player = new Player(2222);
+            player.Age = 10;
+            player.Name = "Vasile";
+            dataLayer.AddPlayer(player);*/
+
         private static DataLayer instance;
 
         public static DataLayer GetInstance() 
@@ -24,42 +44,37 @@ namespace SP_FootballManager
 
         public List<Player> GetAllPlayers()
         {
-            return null;
-        }
-
-        public Player GetPlayerById(string id)
-        {
-            return null;
+            return new GetAllPlayersCommand().execute();
         }
 
         public bool AddPlayer(Player player)
         {
-            return false;
+            return new AddPlayerCommand(player).execute();
         }
 
         public string GetTeamName()
         {
-            return null;
+            return new TeamDetailsCommand().execute().TeamName;
         }
 
         public string GetTeamShortName()
         {
-            return null;
+            return new TeamDetailsCommand().execute().TeamShortName;
         }
 
-        public string GetTeamClasamentPosition()
+        public int GetTeamClasamentPosition()
         {
-            return null;
+            return new TeamDetailsCommand().execute().TeamClasamentPosition;
         }
 
-        public string GetTeamFoundationYear()
+        public int GetTeamFoundationYear()
         {
-            return null;
+            return new TeamDetailsCommand().execute().TeamFoundationYear;
         }
 
-        public string GetTeamBudget()
+        public long GetTeamBudget()
         {
-            return null;
+            return new TeamDetailsCommand().execute().TeamBudget;
         }
     }
 }
