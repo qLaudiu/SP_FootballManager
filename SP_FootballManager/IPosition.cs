@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SP_FootballManager
 {
-    interface IPosition
+    public interface IPosition
     {
         String Player_notes { get; set; }
         Role? Player_role { get; set; }

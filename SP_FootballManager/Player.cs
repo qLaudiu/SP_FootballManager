@@ -15,6 +15,11 @@ namespace SP_FootballManager
         public IPosition Position { get; set; }
         public int Salary { get; set; }
 
+        public Player()
+        {
+            
+        }
+
         public Player(int id)
         {
             ID = id;
@@ -28,6 +33,11 @@ namespace SP_FootballManager
             Age = age;
             Position = position;
             Salary = salary;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("[Player: Name={0}, Number={1}, Age={2}, Position={3}, Salary={4}]", Name, Number, Age, Position, Salary);
         }
     }
 }

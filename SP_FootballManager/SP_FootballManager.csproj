@@ -30,6 +30,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IPosition.cs" />
@@ -50,6 +53,14 @@
     <Compile Include="Team.cs" />
     <Compile Include="Team_Iterator.cs" />
     <Compile Include="Team_Selector.cs" />
+    <Compile Include="RequestCommand.cs" />
+    <Compile Include="AddPlayerCommand.cs" />
+    <Compile Include="GetAllPlayersCommand.cs" />
+    <Compile Include="TeamDetailsCommand.cs" />
+    <Compile Include="TeamDetails.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
