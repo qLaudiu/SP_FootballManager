@@ -3,3 +3,6 @@ C:\Users\gyula\source\repos\SP_Project\SP_FootballManager\SP_FootballManager\bin
 C:\Users\gyula\source\repos\SP_Project\SP_FootballManager\SP_FootballManager\obj\x86\Debug\SP_FootballManager.csproj.CoreCompileInputs.cache
 C:\Users\gyula\source\repos\SP_Project\SP_FootballManager\SP_FootballManager\obj\x86\Debug\SP_FootballManager.exe
 C:\Users\gyula\source\repos\SP_Project\SP_FootballManager\SP_FootballManager\obj\x86\Debug\SP_FootballManager.pdb
+C:\Project\SP_FootballManager\SP_FootballManager\obj\x86\Debug\SP_FootballManager.csprojResolveAssemblyReference.cache
+C:\Project\SP_FootballManager\SP_FootballManager\obj\x86\Debug\SP_FootballManager.csproj.CoreCompileInputs.cache
+C:\Project\SP_FootballManager\SP_FootballManager\obj\x86\Debug\SP_FootballManager.exe

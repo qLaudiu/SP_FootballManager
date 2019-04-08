@@ -32,12 +32,16 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EFormation.cs" />
     <Compile Include="IPosition.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="P_Atack.cs" />
     <Compile Include="Role.cs" />
+    <Compile Include="Tactic.cs" />
+    <Compile Include="TacticBuildDirector.cs" />
+    <Compile Include="TacticBuilder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

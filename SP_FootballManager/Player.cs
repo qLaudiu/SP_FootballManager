@@ -14,6 +14,8 @@ namespace SP_FootballManager
         int Age;
         IPosition Position;
         int Salary;
+        //int PlayerScore - from 0 to 100;
+        //bool isAbleToPlay - not injured or suspended
 
     }
 }
