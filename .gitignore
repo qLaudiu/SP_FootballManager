@@ -3,6 +3,7 @@ SP_FootballManager.userprefs
 obj/
 bin/
 .vs/
+.idea/
 
 # SourceTree generated
 *.iml
