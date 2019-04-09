@@ -37,5 +37,6 @@ namespace SP_FootballManager
         {
             Player_role = null;
         }
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SP_FootballManager
 {
@@ -6,7 +7,6 @@ namespace SP_FootballManager
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }

@@ -14,14 +14,13 @@ namespace SP_FootballManager
             tacticBuilder = new TacticBuilder();
         }
 
-        public TacticBuildDirector(EFormation eFormation,List<Player> PlayerList)
+        public Tactic GetTactic(EFormation eFormation,List<Player> PlayerList)
         {
-            if(tacticBuilder==null)
-            {
-                tacticBuilder = new TacticBuilder();
-            }
+            
             tacticBuilder.setFormation(eFormation);
             tacticBuilder.setRoster(PlayerList);
+            tacticBuilder.setUpTeam();
+            return tacticBuilder.tactic;
         }
 
     }
