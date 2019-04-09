@@ -7,6 +7,13 @@ namespace SP_FootballManager
     {
         private static DataLayer instance;
 
+        private IPlayersListener iPlayersListener;
+
+        public void SetIPlayerListener(IPlayersListener iPlayersListener)
+        {
+            this.iPlayersListener = iPlayersListener;
+        }
+
         public static DataLayer GetInstance() 
         {
             if (instance == null)
@@ -33,7 +40,12 @@ namespace SP_FootballManager
 
         public bool AddPlayer(Player player)
         {
-            return new AddPlayerCommand(player).execute();
+            var result = new AddPlayerCommand(player).execute();
+            if (result && iPlayersListener != null)
+            {
+                iPlayersListener.OnPlayerModified();
+            }
+            return result;
         }
 
         public string GetTeamName()

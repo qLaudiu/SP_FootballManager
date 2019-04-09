@@ -1,23 +1,25 @@
 ﻿using System;
 namespace SP_FootballManager
 {
-    public class UI
+    public class UI : IPlayersListener
     {
         private bool _run = false;
 
         private DataLayer dataLayer = DataLayer.GetInstance();
 
+        private TacticBuildDirector tacticDir = new TacticBuildDirector();
+
+        private TeamBuilderDirector teamDir = new TeamBuilderDirector();
+        private Team team;
+
         public UI()
         {
+            team = teamDir.GetTeam();
         }
 
         public void Init()
         {
-            TacticBuildDirector tacticDir = new TacticBuildDirector();
-
-            TeamBuilderDirector teamDir = new TeamBuilderDirector();
-            Team team = teamDir.GetTeam();
-
+            dataLayer.SetIPlayerListener(this);
             _run = true;
             while(_run)
             {
@@ -94,6 +96,12 @@ namespace SP_FootballManager
                     Console.WriteLine("Unknown option " + option);
                 }
             }
+        }
+
+        public void OnPlayerModified()
+        {
+            Console.WriteLine("There is a new player in the db, reload the team");
+            team = teamDir.GetTeam();
         }
 
         private Player InsertNewPlayer()
