@@ -8,14 +8,14 @@ namespace SP_FootballManager
 {
     public class Player
     {
+
         private int ID { get; set; }
         public String Name { get; set; }
         public int Number { get; set; }
         public int Age { get; set; }
         public IPosition Position { get; set; }
         public int Salary { get; set; }
-        //int PlayerScore - from 0 to 100;
-        //bool isAbleToPlay - not injured or suspended
+
 
         public Player()
         {

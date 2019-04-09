@@ -26,5 +26,6 @@ namespace SP_FootballManager
             Substitutes = new List<Player>();
         }
 
+        
     }
 }

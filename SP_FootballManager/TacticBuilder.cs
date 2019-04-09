@@ -8,7 +8,8 @@ namespace SP_FootballManager
 {
     class TacticBuilder
     {
-        Tactic tactic;
+        public Tactic tactic { get; set; }
+    
 
         public TacticBuilder()
         {
@@ -20,12 +21,12 @@ namespace SP_FootballManager
         public void setFormation(EFormation formation)
         {
             tactic.formation = formation;
-            //SwitchFormation(formation);
+         
         }
 
         public void setRoster(List<Player> allPlayers)
         {
-            if (allPlayers == null)
+            if (allPlayers.Count == 0)
                 throw new Exception("Error. The Roster cannot be initialize with no players");
             else if(tactic.Substitutes!=null)
             {
@@ -89,9 +90,64 @@ namespace SP_FootballManager
         {
             //Presupunem ca primesc o lista valida de 11 playeri dintre care am cel putini 2 GK si lista este sortata in functie de scorul jucatorilor
             //Pun toti jucatorii in lista de subtitutes astfel ca atunci cand mut jucatorii in formatie cei nemutati raman direct in substitutes 
+            foreach (Player player in tactic.Substitutes)
+            {
+                if (player.Position.Player_role == Role.CB || player.Position.Player_role == Role.LB || player.Position.Player_role==Role.RB)
+                {
+                    tactic.Def.Add(player);
+                    tactic.Substitutes.Remove(player);
+                    def--;
+                    if(def==0)
+                    {
+                        break;
+                    }
+                    
+                }
+            }
 
+            foreach (Player player in tactic.Substitutes)
+            {
+                if (player.Position.Player_role == Role.CDM || player.Position.Player_role == Role.LM || player.Position.Player_role == Role.RM ||player.Position.Player_role== Role.CDM)
+                {
+                    tactic.Mid.Add(player);
+                    tactic.Substitutes.Remove(player);
+                    mid--;
+                    if (mid == 0)
+                    {
+                        break;
+                    }
+
+                }
+            }
+
+            foreach (Player player in tactic.Substitutes)
+            {
+                if (player.Position.Player_role == Role.SS || player.Position.Player_role == Role.CF)
+                {
+                    tactic.Atk.Add(player);
+                    tactic.Substitutes.Remove(player);
+                    atk--;
+                    if (atk == 0)
+                    {
+                        break;
+                    }
+
+                }
+            }
+
+            foreach (Player player in tactic.Substitutes)
+            {
+                if (player.Position.Player_role == Role.GK)
+                {
+                    tactic.Gk = player;
+                    break;
+
+                }
+            }
 
         }
+
+        
 
         public void setUpTeam()
         {
