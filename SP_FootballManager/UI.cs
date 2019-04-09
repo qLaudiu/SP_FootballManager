@@ -13,6 +13,11 @@ namespace SP_FootballManager
 
         public void Init()
         {
+            TacticBuildDirector tacticDir = new TacticBuildDirector();
+
+            TeamBuilderDirector teamDir = new TeamBuilderDirector();
+            Team team = teamDir.GetTeam();
+
             _run = true;
             while(_run)
             {
@@ -43,7 +48,7 @@ namespace SP_FootballManager
                     switch(option)
                     {
                         case 1:
-                            foreach(Player p in dataLayer.GetAllPlayers())
+                            foreach(Player p in team.Players)
                             {
                                 Console.WriteLine(p);
                             }
@@ -62,8 +67,17 @@ namespace SP_FootballManager
                             }
                             break;
                         case 3:
+                            Console.WriteLine(team);
                             break;
                         case 4:
+                            if (team.BestTactic == null)
+                            {
+                                Console.WriteLine("No best tactic");
+                            }
+                            else
+                            {
+                                Console.WriteLine(team.BestTactic);
+                            }
                             break;
                         case 5:
                             break;
