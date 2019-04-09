@@ -9,9 +9,8 @@ namespace SP_FootballManager
     class P_Atack : IPosition
     {
         private Role? player_role;
-        
-        public string Player_notes { get; set; }
-        public Role? Player_role
+
+        public new Role? Player_role
         {
             get
             {
@@ -43,5 +42,7 @@ namespace SP_FootballManager
         {
             return "ATK: " + player_role;
         }
+
+
     }
 }

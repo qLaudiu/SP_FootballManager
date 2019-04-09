@@ -1,0 +1,7 @@
+[
+{"Name":"Vasile","Number":4,"Age":22,"Position":{"Player_role":7,"Player_notes":null},"Salary":212121,"Score":99,"IsAbleToPlay":true},
+{"Name":"Costel","Number":5,"Age":22,"Position":{"Player_role":2,"Player_notes":null},"Salary":212121,"Score":22,"IsAbleToPlay":true},
+{"Name":"Dan","Number":6,"Age":22,"Position":{"Player_role":4,"Player_notes":null},"Salary":212121,"Score":88,"IsAbleToPlay":true},
+{"Name":"Jeler","Number":7,"Age":22,"Position":{"Player_role":3,"Player_notes":null},"Salary":212121,"Score":4,"IsAbleToPlay":true},
+{"Name":"Fasole","Number":8,"Age":22,"Position":{"Player_role":1,"Player_notes":null},"Salary":212121,"Score":78,"IsAbleToPlay":true}
+]

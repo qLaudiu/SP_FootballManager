@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SP_FootballManager
 {
-    class Staff_Members : Staff
+    public class Staff_Members : Staff
     {
         public Staff_Members()
         {

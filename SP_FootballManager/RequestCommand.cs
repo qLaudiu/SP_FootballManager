@@ -6,9 +6,9 @@ namespace SP_FootballManager
 {
     public abstract class RequestCommand<T>
     {
-        protected string PLAYER_JSON_FILE = "players_db.json";
+        protected string PLAYER_JSON_FILE = "../../../players_db.json";
 
-        protected string TEAM_DETAILS_FILE = "team_details_db.json";
+        protected string TEAM_DETAILS_FILE = "../../../team_details_db.json";
 
         public abstract T execute();
 
@@ -51,7 +51,8 @@ namespace SP_FootballManager
 
         private void CreateFile(string fileName)
         {
-            File.Create(fileName);
+            var file = File.Create(fileName);
+            file.Close();
         }
 
         private void DeleteFile(string fileName)
@@ -66,7 +67,11 @@ namespace SP_FootballManager
 
         protected string GetTextFromFile(string fileName)
         {
-            return new StreamReader(fileName).ReadToEnd();
+            
+            StreamReader s = new StreamReader(fileName);
+            var stream = s.ReadToEnd();
+            s.Close();
+            return stream;
         }
     }
 }
