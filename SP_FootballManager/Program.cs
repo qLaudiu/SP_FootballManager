@@ -7,6 +7,10 @@ namespace SP_FootballManager
     {
         public static void Main(string[] args)
         {
+
+           
+
+            Console.ReadLine();
         }
     }
 }

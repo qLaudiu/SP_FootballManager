@@ -28,7 +28,7 @@ namespace SP_FootballManager
         {
             if (allPlayers.Count == 0)
                 throw new Exception("Error. The Roster cannot be initialize with no players");
-            else if(tactic.Substitutes!=null)
+            else if(tactic.Substitutes==null)
             {
                 throw new Exception("Error. The player list is already initalized");
             }
@@ -42,7 +42,7 @@ namespace SP_FootballManager
         {
             if (tactic.Substitutes == null)
                 throw new Exception("Error. There are no players to do a formation with. ");
-            else if (tactic.Substitutes.Count < 10)
+            else if (tactic.Substitutes.Count < 11)
             {
                 throw new Exception("Error. There are too few players to do a formation with. ");
             }
