@@ -15,7 +15,7 @@ namespace SP_FootballManager
         {
             get
             {
-                if (Player_role == null)
+                if (player_role == null)
                 {
                     throw new Exception(" ATK value role not set");
                 }
@@ -39,5 +39,9 @@ namespace SP_FootballManager
             Player_role = type;
         }
 
+        public override string ToString()
+        {
+            return "ATK: " + player_role;
+        }
     }
 }
