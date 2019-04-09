@@ -8,8 +8,9 @@ namespace SP_FootballManager
 {
     class P_Atack : IPosition
     {
+        private Role? player_role;
+        
         public string Player_notes { get; set; }
-
         public Role? Player_role
         {
             get
@@ -18,13 +19,13 @@ namespace SP_FootballManager
                 {
                     throw new Exception(" ATK value role not set");
                 }
-                return Player_role;
+                return player_role;
             }
             set
             {
                 if (Role.SS == value || Role.CF == value)
                 {
-                    Player_role = value;
+                    player_role = value;
                 }
                 else
                 {
@@ -33,9 +34,9 @@ namespace SP_FootballManager
             }
         }
 
-        public P_Atack()
+        public P_Atack(Role type)
         {
-            Player_role = null;
+            Player_role = type;
         }
     }
 }

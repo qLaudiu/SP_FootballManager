@@ -1,33 +1,73 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SP_FootballManager
 {
-    class Team_Iterator
+    class Team_Iterator : Team_Selector
     {
-        private Team_Selector selector;
+        private int current_index = -1;
+
+        public Team_Iterator(Team team) : base(team)
+        {
+        }
 
         public Player Next()
         {
-            throw new NotImplementedException();
+            try
+            {
+                ++current_index;
+                return base.selected[current_index];
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
         }
 
-        public Player Rervous()
+        public Player Pervous()
         {
-            throw new NotImplementedException();
+            try
+            {
+                --current_index;
+                return base.selected[current_index];
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
         }
 
         public void Reset()
         {
-            throw new NotImplementedException();
+            current_index = 0;
         }
 
-        public void GetByIndex()
+        public Player GetByIndex(int index)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return base.selected[index];
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        public bool IsValid()
+        {
+            if (base.selected.Count > current_index && -1 > current_index)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

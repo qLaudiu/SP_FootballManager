@@ -6,7 +6,8 @@ namespace SP_FootballManager
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Player player = new Player(1, "Whyskow Luther", 12, 28, new P_Atack(Role.SS), 20000);
+            Console.WriteLine(player);
         }
     }
 }
