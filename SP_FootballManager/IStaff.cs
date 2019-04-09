@@ -17,7 +17,7 @@ namespace SP_FootballManager
 
         protected void DisplayIntern(int depth)
         {
-            Console.WriteLine("Type: " + type + " Notes: " + notes);
+            Console.WriteLine(new String ('|', depth+1) + "- Type: " + type + " Notes: " + notes);
         }
     }
 }

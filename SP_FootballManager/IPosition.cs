@@ -10,5 +10,7 @@ namespace SP_FootballManager
     {
         String Player_notes { get; set; }
         Role? Player_role { get; set; }
+
+        string ToString();
     }
 }

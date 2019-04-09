@@ -9,7 +9,7 @@ namespace SP_FootballManager
 {
     class Team_Iterator : Team_Selector
     {
-        private int current_index = -1;
+        private int current_index = 0;
 
         public Team_Iterator(Team team) : base(team)
         {
@@ -19,8 +19,7 @@ namespace SP_FootballManager
         {
             try
             {
-                ++current_index;
-                return base.selected[current_index];
+                return base.selected[current_index++];
             }
             catch (Exception e)
             {
@@ -60,13 +59,25 @@ namespace SP_FootballManager
 
         public bool IsValid()
         {
-            if (base.selected.Count > current_index && -1 > current_index)
+            if (base.selected.Count > current_index && 0 <= current_index)
             {
                 return true;
             }
             else
             {
                 return false;
+            }
+        }
+
+        public void SortByScore()
+        {
+            try
+            {
+                selected.Sort((x, y) => y.Score.CompareTo(x.Score));
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Could not sort selected players");
             }
         }
     }

@@ -15,7 +15,7 @@ namespace SP_FootballManager
         {
             get
             {
-                if (Player_role == null)
+                if (player_role == null)
                 {
                     throw new Exception(" GK value role not set");
                 }
@@ -37,6 +37,11 @@ namespace SP_FootballManager
         public P_GoalKeeper(Role type)
         {
             Player_role = type;
+        }
+
+        public override string ToString()
+        {
+            return "GK: " + player_role;
         }
     }
 }
