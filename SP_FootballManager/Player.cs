@@ -16,6 +16,7 @@ namespace SP_FootballManager
         public IPosition Position { get; set; }
         public int Salary { get; set; }
 
+
         public Player()
         {
             
