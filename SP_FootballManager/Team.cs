@@ -10,13 +10,14 @@ namespace SP_FootballManager
     {
         public List<Player> Players = new List<Player>();
         public List<IStaff> Staff = new List<IStaff>();
+        public Tactic BestTactic = new Tactic();
         public int Budget { get; set; }
         public int Clasament_Position { get; set; }
         public string Name { get; set; }
         public string Shor_Name { get; set; }
         public int Year { get; set; }
 
-        protected Team()
+        public Team()
         {
             
         }
@@ -36,6 +37,14 @@ namespace SP_FootballManager
         {
             // TODO: finish
             return "Players: " + Players;
+        }
+
+
+        public void ChangeTactic(EFormation eFormation)
+        {
+            TacticBuildDirector tacticBuildDirector = new TacticBuildDirector();
+            BestTactic = tacticBuildDirector.GetTactic(eFormation, this.Players);
+        
         }
     }
 }
