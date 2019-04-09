@@ -16,7 +16,6 @@ namespace SP_FootballManager
         public List<Player> Substitutes { get; set; }
         public EFormation formation { get; set; }
 
-
         public Tactic()
         {
             Gk = new Player();
@@ -26,6 +25,35 @@ namespace SP_FootballManager
             Substitutes = new List<Player>();
         }
 
-        
+        public override string ToString()
+        {
+            var gk = "GK: " + Gk;
+
+            var def = "DEF PLAYERS: \n";
+            foreach (Player p in Def)
+            {
+                def = def + p + "\n";
+            }
+
+            var mid = "MID PLAYERS: \n";
+            foreach (Player p in Mid)
+            {
+                mid = mid + p + "\n";
+            }
+
+            var atk = "ATK PLAYERS: \n";
+            foreach (Player p in Atk)
+            {
+                atk = atk + p + "\n";
+            }
+
+            var sub = "SUBS PLAYERS: \n";
+            foreach (Player p in Substitutes)
+            {
+                sub = sub + p + "\n";
+            }
+
+            return "TEAM TACKTIC: \n FORMATION: " + formation + "\n" + gk + "\n" + def + mid + atk;
+        }
     }
 }
