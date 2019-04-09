@@ -20,6 +20,33 @@ namespace SP_FootballManager
             team.Players = players;
         }
         
-        //public void setStaff()
+        public void setYear(int year)
+        {
+            team.Year = year;
+        }
+
+        public void setName(string name)
+        {
+            team.Name = name;
+        }
+        public void setClassmentPosition(int position)
+        {
+            team.Clasament_Position = position;
+        }
+
+        public void setShorName(string shorName)
+        {
+            team.Shor_Name = shorName;
+        }
+
+        public void setBudget(int budget)
+        {
+            team.Budget = budget;
+        }
+
+        public void setStaffMembers(Staff_Members staff_Members)
+        {
+            team.Staff = staff_Members;
+        }
     }
 }
