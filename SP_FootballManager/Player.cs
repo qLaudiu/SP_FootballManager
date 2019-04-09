@@ -15,7 +15,7 @@ namespace SP_FootballManager
         public int Age { get; set; }
         public IPosition Position { get; set; }
         public int Salary { get; set; }
-
+        
 
         public Player()
         {
