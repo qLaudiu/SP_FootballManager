@@ -7,17 +7,12 @@ namespace SP_FootballManager
     {
         public static void Main(string[] args)
         {
-            ////
-            // Player creation workflow
-            ////
+            UI ui = new UI();
+            ui.Init();
 
             Player player = new Player(1, "Whyskow Luther", 12, 28, new P_Atack(Role.SS), 20000, 10, true);
             Player player2 = new Player(2, "Bestinkson Master", 12, 28, new P_Atack(Role.SS), 20000, 5, true);
-
-            ////
-            // Staff creation workflow
-            ////
-            
+          
             IStaff staff = new Staff_Members();
             IStaff director = new Staff();
             IStaff director2 = new Staff();

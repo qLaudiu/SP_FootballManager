@@ -63,6 +63,7 @@
     <Compile Include="GetAllPlayersCommand.cs" />
     <Compile Include="TeamDetailsCommand.cs" />
     <Compile Include="TeamDetails.cs" />
+    <Compile Include="UI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
