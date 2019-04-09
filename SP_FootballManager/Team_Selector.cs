@@ -9,11 +9,19 @@ namespace SP_FootballManager
     class Team_Selector
     {
         private Team team;
-        private int selected;
+        private Role? type = null;
+        protected List<Player> selected = new List<Player>();
 
-        public List<Player> GetPlayers()
+        public Team_Selector(Team team)
         {
-            throw new NotImplementedException();
+            this.team = team;
+            selected = new List<Player>(team.Players);
+        }
+
+        public void SetRole(Role type)
+        {
+            this.type = type;
+            selected = new List<Player>(team.Players.Where((item, index) => item.Position.Player_role == this.type));
         }
     }
 }

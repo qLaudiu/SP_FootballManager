@@ -8,8 +8,9 @@ namespace SP_FootballManager
 {
     class P_Middle : IPosition
     {
-        public string Player_notes { get; set; }
+        private Role? player_role;
 
+        public string Player_notes { get; set; }
         public Role? Player_role
         {
             get
@@ -18,13 +19,13 @@ namespace SP_FootballManager
                 {
                     throw new Exception(" MID value role not set");
                 }
-                return Player_role;
+                return player_role;
             }
             set
             {
                 if (Role.CM == value || Role.LM == value || Role.RM == value || Role.CDM == value)
                 {
-                    Player_role = value;
+                    player_role = value;
                 }
                 else
                 {
@@ -33,9 +34,9 @@ namespace SP_FootballManager
             }
         }
 
-        public P_Middle()
+        public P_Middle(Role type)
         {
-            Player_role = null;
+            Player_role = type;
         }
     }
 }
