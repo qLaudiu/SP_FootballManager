@@ -1,5 +1,9 @@
 .vs
 SP_FootballManager.userprefs
+obj/
+bin/
+.vs/
+.idea/
 
 # SourceTree generated
 *.iml
@@ -8,4 +12,5 @@ SP_FootballManager.userprefs
 *.png
 *.js
 *.zip
+*.exe
 **/package-list

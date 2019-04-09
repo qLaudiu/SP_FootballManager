@@ -8,12 +8,35 @@ namespace SP_FootballManager
 {
     public class Player
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        int ID;
+        String Name;
+        int Number;
+        int Age;
+        IPosition Position;
+        int Salary;
+        //int PlayerScore - from 0 to 100;
+        //bool isAbleToPlay - not injured or suspended
+=======
+=======
+>>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
+=======
+>>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
         private int ID { get; set; }
         public String Name { get; set; }
         public int Number { get; set; }
         public int Age { get; set; }
         public IPosition Position { get; set; }
         public int Salary { get; set; }
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
+=======
+>>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
+=======
+>>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
 
         public Player()
         {
