@@ -8,19 +8,41 @@ namespace SP_FootballManager
 {
     class Staff : IStaff
     {
+        private List<IStaff> children = new List<IStaff>();
+
+        public Staff() : base()
+        {
+        }
+
         public override void Add(IStaff child)
         {
-            throw new NotImplementedException();
+            if (!children.Contains(child))
+            {
+                children.Add(child);
+            }
         }
 
         public override bool Remove(IStaff child)
         {
-            throw new NotImplementedException();
+            if (!children.Contains(child))
+            {
+                children.Remove(child);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         protected internal override void Display(int depth)
         {
-            throw new NotImplementedException();
+            base.DisplayIntern(depth);
+            depth++;
+            foreach (IStaff child in children)
+            {
+                child.Display(depth);
+            }
         }
     }
 }
