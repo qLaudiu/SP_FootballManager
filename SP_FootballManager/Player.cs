@@ -43,7 +43,7 @@ namespace SP_FootballManager
 
         public override string ToString()
         {
-            return string.Format("[Player: Name={0}, Number={1}, Age={2}, Position={3}, Salary={4}, Score={5}, CanPlay= {6}]", Name, Number, Age, Position, Salary, Score, IsAbleToPlay);
+            return string.Format("[Player: Name={0}, Number={1}, Age={2}, Position={3}, Salary={4}, Score={5}, CanPlay= {6}]", Name, Number, Age, Position.Player_role, Salary, Score, IsAbleToPlay);
         }
     }
 }

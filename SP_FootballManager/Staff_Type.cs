@@ -13,6 +13,7 @@ namespace SP_FootballManager
         TrainManager,
         Manager,
         FitnesTrainer,
-        Medic
+        Medic,
+        Trainer,
     }
 }

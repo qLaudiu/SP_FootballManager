@@ -8,15 +8,15 @@ namespace SP_FootballManager
 {
     public enum Role
     {
-        SS,
-        CF,
-        CM,
-        LM,
-        RM,
-        CDM,
-        CB,
-        LB,
-        RB,
-        GK
+        SS = 1,
+        CF = 2,
+        CM = 3,
+        LM = 4,
+        RM = 5,
+        CDM = 6,
+        CB = 7,
+        LB = 8,
+        RB = 9,
+        GK = 0
     }
 }

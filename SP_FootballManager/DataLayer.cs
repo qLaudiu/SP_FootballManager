@@ -5,27 +5,6 @@ namespace SP_FootballManager
 {
     public class DataLayer
     {
-
-        /*
-            DataLayer dataLayer = DataLayer.GetInstance();
-
-            Console.WriteLine(dataLayer.GetTeamName());
-            Console.WriteLine(dataLayer.GetTeamShortName());
-            Console.WriteLine(dataLayer.GetTeamFoundationYear());
-            Console.WriteLine(dataLayer.GetTeamClasamentPosition());
-            Console.WriteLine(dataLayer.GetTeamFoundationYear());
-            Console.WriteLine(dataLayer.GetTeamBudget());
-
-            foreach (Player p in dataLayer.GetAllPlayers())
-            {
-                Console.WriteLine(p);
-            }
-
-            Player player = new Player(2222);
-            player.Age = 10;
-            player.Name = "Vasile";
-            dataLayer.AddPlayer(player);*/
-
         private static DataLayer instance;
 
         public static DataLayer GetInstance() 
@@ -42,9 +21,9 @@ namespace SP_FootballManager
             // Private constructor
         }
 
-        public IStaff GetStuff()
+        public Staff_Members GetStaff()
         {
-            return null;
+            return new GetStaffCommand().execute();
         }
 
         public List<Player> GetAllPlayers()
