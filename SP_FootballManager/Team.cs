@@ -11,7 +11,7 @@ namespace SP_FootballManager
         public List<Player> Players = new List<Player>();
         public Tactic BestTactic = new Tactic();
         public Staff_Members Staff = new Staff_Members();
-        public int Budget { get; set; }
+        public long Budget { get; set; }
         public int Clasament_Position { get; set; }
         public string Name { get; set; }
         public string Shor_Name { get; set; }

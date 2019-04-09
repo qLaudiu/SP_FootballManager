@@ -56,6 +56,7 @@
     <Compile Include="Staff_Type.cs" />
     <Compile Include="Team.cs" />
     <Compile Include="TeamBuilder.cs" />
+    <Compile Include="TeamBuilderDirector.cs" />
     <Compile Include="Team_Iterator.cs" />
     <Compile Include="Team_Selector.cs" />
     <Compile Include="RequestCommand.cs" />

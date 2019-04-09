@@ -8,7 +8,8 @@ namespace SP_FootballManager
 {
     class TeamBuilder
     {
-        private Team team = new Team();
+        public Team team = new Team();
+
 
         public TeamBuilder()
         {
@@ -39,7 +40,7 @@ namespace SP_FootballManager
             team.Shor_Name = shorName;
         }
 
-        public void setBudget(int budget)
+        public void setBudget(long budget)
         {
             team.Budget = budget;
         }
