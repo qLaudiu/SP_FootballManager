@@ -42,6 +42,11 @@ namespace SP_FootballManager
             // Private constructor
         }
 
+        public IStaff GetStuff()
+        {
+            return null;
+        }
+
         public List<Player> GetAllPlayers()
         {
             return new GetAllPlayersCommand().execute();

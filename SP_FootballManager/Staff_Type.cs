@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SP_FootballManager
 {
-    enum Staff_Type
+    public enum Staff_Type
     {
         CompanyOwner,
         Director,
