@@ -43,17 +43,9 @@
     <Compile Include="P_GoalKeeper.cs" />
     <Compile Include="P_Middle.cs" />
     <Compile Include="Role.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <Compile Include="Tactic.cs" />
     <Compile Include="TacticBuildDirector.cs" />
     <Compile Include="TacticBuilder.cs" />
-=======
-=======
->>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
-=======
->>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
     <Compile Include="IStaff.cs" />
     <Compile Include="Staff.cs" />
     <Compile Include="Staff_Members.cs" />
@@ -62,13 +54,6 @@
     <Compile Include="Team.cs" />
     <Compile Include="Team_Iterator.cs" />
     <Compile Include="Team_Selector.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
-=======
->>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
-=======
->>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
