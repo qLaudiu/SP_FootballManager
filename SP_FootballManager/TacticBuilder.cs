@@ -89,7 +89,13 @@ namespace SP_FootballManager
         {
             //Presupunem ca primesc o lista valida de 11 playeri dintre care am cel putini 2 GK si lista este sortata in functie de scorul jucatorilor
             //Pun toti jucatorii in lista de subtitutes astfel ca atunci cand mut jucatorii in formatie cei nemutati raman direct in substitutes 
+            foreach (Player player in tactic.Substitutes)
+            {
+                if (player.Position.Player_role == Role.CB || player.Position.Player_role == Role.LB || player.Position.Player_role==Role.RB)
+                {
 
+                }
+            }
 
         }
 
