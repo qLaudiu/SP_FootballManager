@@ -16,6 +16,11 @@ namespace SP_FootballManager
         public string Shor_Name { get; set; }
         public int Year { get; set; }
 
+        protected Team()
+        {
+            
+        }
+
         public Team(Team team)
         {
             Players = team.Players;

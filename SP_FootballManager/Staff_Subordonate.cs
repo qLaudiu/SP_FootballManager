@@ -20,7 +20,7 @@ namespace SP_FootballManager
 
         protected internal override void Display(int depth)
         {
-            throw new NotImplementedException();
+            base.DisplayIntern(depth);
         }
     }
 }
