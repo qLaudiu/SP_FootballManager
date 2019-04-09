@@ -12,14 +12,18 @@ namespace SP_FootballManager
             
             IStaff staff = new Staff_Members();
             IStaff director = new Staff();
+            IStaff director2 = new Staff();
+
             IStaff subordonate = new Staff_Subordonate();
             director.type = Staff_Type.Director;
+            director2.type = Staff_Type.Manager;
             subordonate.type = Staff_Type.Medic;
             
             director.Add(subordonate);
             staff.Add(director);
+            staff.Add(director2);
 
-            staff.Display(1);
+            staff.Display(0);
         }
     }
 }
