@@ -15,5 +15,11 @@ namespace SP_FootballManager
         public string Name { get; set; }
         public string Shor_Name { get; set; }
         public int Year { get; set; }
+
+        public override string ToString()
+        {
+            // TODO: finish
+            return "Players: " + Players;
+        }
     }
 }
