@@ -18,6 +18,7 @@ namespace SP_FootballManager
         public int Score { get; set; }
         public bool IsAbleToPlay { get; set; }
 
+
         public Player()
         {
             
