@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SP_FootballManager
 {
-    abstract class IStaff
+    public abstract class IStaff
     {
         public Staff_Type type { get; set; }
         public string notes { get; set; }
