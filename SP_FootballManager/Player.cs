@@ -38,6 +38,11 @@ namespace SP_FootballManager
 =======
 >>>>>>> 7b1490767109ca2fd28d58afef2fd9674436fafd
 
+        public Player()
+        {
+            
+        }
+
         public Player(int id)
         {
             ID = id;
@@ -51,6 +56,11 @@ namespace SP_FootballManager
             Age = age;
             Position = position;
             Salary = salary;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("[Player: Name={0}, Number={1}, Age={2}, Position={3}, Salary={4}]", Name, Number, Age, Position, Salary);
         }
     }
 }
