@@ -24,5 +24,6 @@
 {"Name":"Banel","Number":10,"Age":22,"Position":{"Player_role":0,"Player_notes":null},"Salary":212121,"Score":78,"IsAbleToPlay":true},
 {"Name":"Perja","Number":12,"Age":22,"Position":{"Player_role":0,"Player_notes":null},"Salary":212121,"Score":78,"IsAbleToPlay":true},
 {"Name":"Claudiu","Number":4,"Age":24,"Position":{"Player_role":9,"Player_notes":null},"Salary":9999999,"Score":99,"IsAbleToPlay":true},
-{"Name":"Gogo","Number":87,"Age":33,"Position":{"Player_role":2,"Player_notes":null},"Salary":43534,"Score":77,"IsAbleToPlay":true}
+{"Name":"Gogo","Number":87,"Age":33,"Position":{"Player_role":2,"Player_notes":null},"Salary":43534,"Score":77,"IsAbleToPlay":true},
+{"Name":"Alexe","Number":10,"Age":22,"Position":{"Player_role":9,"Player_notes":null},"Salary":100000,"Score":72,"IsAbleToPlay":true}
 ]

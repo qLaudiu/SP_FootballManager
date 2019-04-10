@@ -26,28 +26,25 @@ namespace SP_FootballManager
 
         public void setRoster(List<Player> allPlayers)
         {
+            const int MinimumRequiredPlayers = 14;
             if (allPlayers.Count == 0)
                 throw new Exception("Error. The Roster cannot be initialize with no players");
-            else if(tactic.Substitutes!=null)
+            else if(tactic.Substitutes!=null && tactic.Substitutes.Count>0)
             {
                 throw new Exception("Error. The player list is already initalized");
             }
-            else
-            {
-                tactic.Substitutes = allPlayers;
-            }
-            
-        }
-       private void SwitchFormation(EFormation eFormation)
-        {
-            if (tactic.Substitutes == null)
-                throw new Exception("Error. There are no players to do a formation with. ");
-            else if (tactic.Substitutes.Count < 10)
+            else if (allPlayers.Count < MinimumRequiredPlayers)
             {
                 throw new Exception("Error. There are too few players to do a formation with. ");
             }
             else
             {
+                tactic.Substitutes = allPlayers;
+            }
+        }
+       private void SwitchFormation(EFormation eFormation)
+        {
+
                 switch (eFormation)
                 {
                     case EFormation.Formation2_3_5:
@@ -83,13 +80,15 @@ namespace SP_FootballManager
                         
 
                 }
-            }
+            
         }
 
         private void DistributePlayersSimpleFormation(int def,int mid,int atk)
         {
             //Presupunem ca primesc o lista valida de 11 playeri dintre care am cel putini 2 GK si lista este sortata in functie de scorul jucatorilor
             //Pun toti jucatorii in lista de subtitutes astfel ca atunci cand mut jucatorii in formatie cei nemutati raman direct in substitutes 
+
+            bool RedFlagGk = true;
             foreach (Player player in tactic.Substitutes)
             {
                 if (player.Position.Player_role == Role.CB || player.Position.Player_role == Role.LB || player.Position.Player_role==Role.RB)
@@ -107,7 +106,7 @@ namespace SP_FootballManager
 
             foreach (Player player in tactic.Substitutes)
             {
-                if (player.Position.Player_role == Role.CDM || player.Position.Player_role == Role.LM || player.Position.Player_role == Role.RM ||player.Position.Player_role== Role.CDM)
+                if (player.Position.Player_role == Role.CDM || player.Position.Player_role == Role.LM || player.Position.Player_role == Role.RM ||player.Position.Player_role== Role.CDM)// veriric prin positon 
                 {
                     tactic.Mid.Add(player);
                     tactic.Substitutes.Remove(player);
@@ -140,11 +139,28 @@ namespace SP_FootballManager
                 if (player.Position.Player_role == Role.GK)
                 {
                     tactic.Gk = player;
+                    RedFlagGk = false;
                     break;
 
                 }
             }
 
+            if (def!=0)
+            {
+                throw new Exception("Error. There are not enough defensive players for this formation.");
+            }
+            else if (mid !=0)
+            {
+                throw new Exception("Error. There are not enough midfiled players for this formation.");
+            }
+            else if(atk!=0)
+            {
+                throw new Exception("Error. There are not enough attackfield players for this formation.");
+            }
+            else if(RedFlagGk==true)
+            {
+                throw new Exception("Error. There is no goalkeeper for this formation.");
+            }
         }
 
         
