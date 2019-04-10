@@ -35,8 +35,17 @@ namespace SP_FootballManager
 
         public override string ToString()
         {
-            // TODO: finish
-            return "Players: " + Players;
+            var s1 = string.Format("[Team: Budget={0}, Clasament_Position={1}, Name={2}, Shor_Name={3}, Year={4}]", Budget, Clasament_Position, Name, Shor_Name, Year);
+
+            var s2 = "";
+            foreach (Player p in Players)
+            {
+                s2 = s2 + p + "\n";
+            }
+
+            Staff.Display(0);
+
+            return s1 + "\n" + s2 + "\n";
         }
 
 

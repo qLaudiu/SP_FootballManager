@@ -65,6 +65,8 @@
     <Compile Include="TeamDetailsCommand.cs" />
     <Compile Include="TeamDetails.cs" />
     <Compile Include="UI.cs" />
+    <Compile Include="GetStaffCommand.cs" />
+    <Compile Include="IPlayersListener.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace SP_FootballManager
 {
-    public interface IPosition
+    public class IPosition
     {
-        String Player_notes { get; set; }
-        Role? Player_role { get; set; }
-
-        string ToString();
+        public String Player_notes { get; set; }
+        public Role? Player_role;
     }
 }

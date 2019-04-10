@@ -10,8 +10,7 @@ namespace SP_FootballManager
     {
         private Role? player_role;
 
-        public string Player_notes { get; set; }
-        public Role? Player_role
+        public new Role? Player_role
         {
             get
             {
