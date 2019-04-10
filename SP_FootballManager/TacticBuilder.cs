@@ -107,7 +107,7 @@ namespace SP_FootballManager
 
             foreach (Player player in tactic.Substitutes)
             {
-                if (player.Position.Player_role == Role.CDM || player.Position.Player_role == Role.LM || player.Position.Player_role == Role.RM ||player.Position.Player_role== Role.CDM)
+                if (player.Position.Player_role == Role.CDM || player.Position.Player_role == Role.LM || player.Position.Player_role == Role.RM ||player.Position.Player_role== Role.CDM)// veriric prin positon 
                 {
                     tactic.Mid.Add(player);
                     tactic.Substitutes.Remove(player);

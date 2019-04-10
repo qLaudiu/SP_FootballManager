@@ -22,7 +22,7 @@ namespace SP_FootballManager
         {
             teamBuilder.setTeam(dataLayer.GetAllPlayers());
             teamBuilder.setYear(dataLayer.GetTeamFoundationYear());
-            teamBuilder.setStaffMembers(dataLayer.GetStuff());
+            //teamBuilder.setStaffMembers(dataLayer.GetStuff());
             teamBuilder.setShorName(dataLayer.GetTeamShortName());
             teamBuilder.setName(dataLayer.GetTeamName());
             teamBuilder.setBudget(dataLayer.GetTeamBudget());
