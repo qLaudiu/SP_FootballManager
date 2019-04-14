@@ -24,6 +24,16 @@ namespace SP_FootballManager
          
         }
 
+        public void unsetRoster()
+        {
+            tactic.Atk = new List<Player>();
+            tactic.Def = new List<Player>();
+            tactic.Gk = new Player();
+            tactic.Mid = new List<Player>();
+            tactic.Substitutes = new List<Player>();
+            tactic.Substitutes = null;
+        }
+
         public void setRoster(List<Player> allPlayers)
         {
             const int MinimumRequiredPlayers = 14;

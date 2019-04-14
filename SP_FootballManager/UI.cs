@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace SP_FootballManager
 {
     public class UI : IPlayersListener
@@ -101,31 +103,31 @@ namespace SP_FootballManager
                             switch (formation)
                             {
                                 case 1:
-                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation2_3_5, team.Players);
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation2_3_5, new List<Player>(team.Players));
                                     break;
                                 case 2:
-                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation3_2_5, team.Players);
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation3_2_5, new List<Player>(team.Players));
                                     break;
                                 case 3:
-                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation2_3_2_3, team.Players);
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation2_3_2_3, new List<Player>(team.Players));
                                     break;
                                 case 4:
-                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_2_4, team.Players);
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_2_4, new List<Player>(team.Players));
                                     break;
                                 case 5:
-                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_3_3, team.Players);
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_3_3, new List<Player>(team.Players));
                                     break;
                                 case 6:
-                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation5_4_1, team.Players);
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation5_4_1, new List<Player>(team.Players));
                                     break;
                                 case 7:
-                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_4_2, team.Players);
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_4_2, new List<Player>(team.Players));
                                     break;
                                 case 8:
-                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation3_5_2, team.Players);
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation3_5_2, new List<Player>(team.Players));
                                     break;
                                 case 9:
-                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_2_3_1, team.Players);
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_2_3_1, new List<Player>(team.Players));
                                     break;
                                 default:
                                     Console.WriteLine("No formation selected...");

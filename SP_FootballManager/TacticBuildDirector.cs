@@ -17,6 +17,7 @@ namespace SP_FootballManager
         public Tactic GetTactic(EFormation eFormation, List<Player> PlayerList)
         {
             tacticBuilder.setFormation(eFormation);
+            tacticBuilder.unsetRoster();
             tacticBuilder.setRoster(PlayerList);
             tacticBuilder.setUpTeam();
             return tacticBuilder.tactic;
