@@ -21,16 +21,19 @@ namespace SP_FootballManager
         {
             dataLayer.SetIPlayerListener(this);
             _run = true;
-            while(_run)
+            while (_run)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please select one option: ");
                 Console.WriteLine("1. Show all players ");
                 Console.WriteLine("2. Add player ");
                 Console.WriteLine("3. Show Team ");
                 Console.WriteLine("4. Show best tactic ");
                 Console.WriteLine("5. Change Tactic ");
+                Console.WriteLine("6. Iterate Team");
                 Console.WriteLine("0. Exit ");
                 Console.WriteLine("Enter option: ");
+                Console.ForegroundColor = ConsoleColor.White;
 
                 var optionString = Console.ReadLine();
 
@@ -45,12 +48,12 @@ namespace SP_FootballManager
                     continue;
                 }
 
-                if (option >= 0 && option <= 5)
+                if (option >= 0 && option <= 6)
                 {
-                    switch(option)
+                    switch (option)
                     {
                         case 1:
-                            foreach(Player p in team.Players)
+                            foreach (Player p in team.Players)
                             {
                                 Console.WriteLine(p);
                             }
@@ -95,7 +98,8 @@ namespace SP_FootballManager
 
                             var formationString = Console.ReadLine();
                             int formation = Convert.ToInt32(formationString);
-                            switch(formation) {
+                            switch (formation)
+                            {
                                 case 1:
                                     team.BestTactic = tacticDir.GetTactic(EFormation.Formation2_3_5, team.Players);
                                     break;
@@ -129,8 +133,12 @@ namespace SP_FootballManager
 
                             }
                             break;
+                        case 6:
+                            IterateTeamPlayers();
+                            break;
                         case 0:
                             _run = false;
+                            Environment.Exit(0);
                             break;
                         default:
                             Console.WriteLine("Unknown option " + option);
@@ -142,6 +150,74 @@ namespace SP_FootballManager
                     Console.WriteLine("Unknown option " + option);
                 }
             }
+        }
+
+        public void IterateTeamPlayers()
+        {
+            Team_Iterator iterator = new Team_Iterator(team);
+            bool run_iterator = true;
+            while (iterator.IsValid() && run_iterator)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Curent position: " + iterator.GetPlayer());
+                Console.ForegroundColor = ConsoleColor.White;
+
+                Console.WriteLine("Please select operation:");
+                Console.WriteLine("1. Pervous");
+                Console.WriteLine("2. Next");
+                Console.WriteLine("3. Change selection criteria");
+                Console.WriteLine("4. Get by index");
+                Console.WriteLine("5. Reset");
+                Console.WriteLine("6. Sort players by score");
+                Console.WriteLine("0. Back");
+
+
+                var operationRaw = Console.ReadLine();
+                int? operation = Convert.ToInt32(operationRaw);
+
+                switch (operation)
+                {
+                    case 1:
+                        iterator.Pervous();
+                        operation = null;
+                        break;
+                    case 2:
+                        iterator.Next();
+                        operation = null;
+                        break;
+                    case 3:
+                        Console.WriteLine("SS = 1, CF = 2, CM = 3, LM = 4, RM = 5, CDM = 6, CB = 7, LB = 8, RB = 9, GK = 0");
+                        Role selection_role = (Role)Convert.ToInt32(Console.ReadLine());
+                        iterator.SetRole(selection_role);
+                        Console.WriteLine("Selection role set to: " + selection_role);
+                        operation = null;
+                        break;
+                    case 4:
+                        Console.WriteLine("Insert index number:");
+                        Player player_by_index = iterator.GetByIndex(Convert.ToInt32(Console.ReadLine()));
+                        if (player_by_index != null)
+                            Console.WriteLine("Selected player: " + player_by_index);
+                        else
+                            Console.WriteLine("Index not in array");
+                        operation = null;
+                        break;
+                    case 5:
+                        iterator.Reset();
+                        Console.WriteLine("Iterator position reset!");
+                        operation = null;
+                        break;
+                    case 6:
+                        iterator.SortByScore();
+                        Console.WriteLine("Sorted by score!");
+                        operation = null;
+                        break;
+                    case 0:
+                        run_iterator = false;
+                        break;
+                }
+            }
+            if (run_iterator)
+                Console.WriteLine("Iteration came to and end!");
         }
 
         public void OnPlayerModified()
@@ -270,7 +346,7 @@ namespace SP_FootballManager
                     return null;
                 }
             }
-            else 
+            else
             {
                 Console.WriteLine("Error");
                 return null;

@@ -73,12 +73,17 @@ namespace SP_FootballManager
         {
             try
             {
-                selected.Sort((x, y) => y.Score.CompareTo(x.Score));
+                base.selected.Sort((x, y) => y.Score.CompareTo(x.Score));
             }
             catch (Exception e)
             {
                 throw new Exception("Could not sort selected players");
             }
+        }
+
+        public Player GetPlayer()
+        {
+            return selected[current_index];
         }
     }
 }

@@ -9,7 +9,7 @@ namespace SP_FootballManager
     class Team
     {
         public List<Player> Players = new List<Player>();
-        public Tactic BestTactic = new Tactic();
+        public Tactic BestTactic = null;
         public Staff_Members Staff = new Staff_Members();
         public long Budget { get; set; }
         public int Clasament_Position { get; set; }
