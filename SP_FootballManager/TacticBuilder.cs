@@ -29,10 +29,6 @@ namespace SP_FootballManager
             const int MinimumRequiredPlayers = 14;
             if (allPlayers.Count == 0)
                 throw new Exception("Error. The Roster cannot be initialize with no players");
-            else if(tactic.Substitutes!=null && tactic.Substitutes.Count>0)
-            {
-                throw new Exception("Error. The player list is already initalized");
-            }
             else if (allPlayers.Count < MinimumRequiredPlayers)
             {
                 throw new Exception("Error. There are too few players to do a formation with. ");

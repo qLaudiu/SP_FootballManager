@@ -1,2 +1,222 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SP_FootballManager.AddPlayerCommand" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAECAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AddPlayerCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.DataLayer" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAgAAAAAIQAAAIAAABBABASCAAAAgAAAAAAAA=</HashCode>
+      <FileName>DataLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.GetAllPlayersCommand" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GetAllPlayersCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.GetStaffCommand" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GetStaffCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.IPosition" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPosition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.IStaff" Collapsed="true">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAEBQAAAAABAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>IStaff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.P_Atack" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>P_Atack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.P_Deffender" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>P_Deffender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.P_GoalKeeper" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>P_GoalKeeper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.P_Middle" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>P_Middle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.Player" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAgAgkAEAAAAQAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.MainClass" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.RequestCommand&lt;T&gt;" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAABAAAEAAAAAAAAQEAAACACAAAAAEAEMAAAAAAAA=</HashCode>
+      <FileName>RequestCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.Staff" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAQAAAAABQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Staff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.Staff_Members" Collapsed="true">
+    <Position X="2.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Staff_Members.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.Staff_Subordonate" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Staff_Subordonate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.Tactic" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAACEEAAAAAAAAACAAAAAAAAAASAAAAA=</HashCode>
+      <FileName>Tactic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.TacticBuildDirector" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>TacticBuildDirector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.TacticBuilder" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAQAAACAAAEMAAAAAAAAAAA=</HashCode>
+      <FileName>TacticBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.Team" Collapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAEAEAAAAQAACAhAAAAIAAAAAAAiAA=</HashCode>
+      <FileName>Team.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.Team_Iterator" Collapsed="true">
+    <Position X="5.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAgABAAAAAkAEAAAAAAAAAACAAAAAAACAAA=</HashCode>
+      <FileName>Team_Iterator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.Team_Selector" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Team_Selector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.TeamBuilder" Collapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAADAAAQAABAAAAAIBAAQAA=</HashCode>
+      <FileName>TeamBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.TeamBuilderDirector" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TeamBuilderDirector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.TeamDetails" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAAAAAAIAAAk=</HashCode>
+      <FileName>TeamDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.TeamDetailsCommand" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TeamDetailsCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP_FootballManager.UI" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACgAIAAAAAAAAAAAAAAAAQIAAAQAgAAAAACAAAAAAA=</HashCode>
+      <FileName>UI.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="SP_FootballManager.IPlayersListener" Collapsed="true">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPlayersListener.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SP_FootballManager.EFormation" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAiIAAgAAAAAAAAAARAACBAAAAAAAAQAAAAAEAAAA=</HashCode>
+      <FileName>EFormation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SP_FootballManager.Role" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACAAAEAigAAAAAAAAAAAAAEAAEAAkAA=</HashCode>
+      <FileName>Role.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SP_FootballManager.Staff_Type" Collapsed="true">
+    <Position X="13.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABBAAAQAAAAAAAAAAAQAAAACABCAAAAAAAAAAAAA=</HashCode>
+      <FileName>Staff_Type.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
