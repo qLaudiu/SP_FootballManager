@@ -82,6 +82,52 @@ namespace SP_FootballManager
                             }
                             break;
                         case 5:
+                            Console.WriteLine("Tactic: ");
+                            Console.WriteLine("1. Formation 2_3_5");
+                            Console.WriteLine("2. Formation 3_2_5");
+                            Console.WriteLine("3. Formation 2_3_2_3");
+                            Console.WriteLine("4. Formation 4_2_4");
+                            Console.WriteLine("5. Formation 4_3_3");
+                            Console.WriteLine("6. Formation 5_4_1");
+                            Console.WriteLine("7. Formation 4_4_2");
+                            Console.WriteLine("8. Formation 3_5_2");
+                            Console.WriteLine("9. Formation 4_2_3_1");
+
+                            var formationString = Console.ReadLine();
+                            int formation = Convert.ToInt32(formationString);
+                            switch(formation) {
+                                case 1:
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation2_3_5, team.Players);
+                                    break;
+                                case 2:
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation3_2_5, team.Players);
+                                    break;
+                                case 3:
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation2_3_2_3, team.Players);
+                                    break;
+                                case 4:
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_2_4, team.Players);
+                                    break;
+                                case 5:
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_3_3, team.Players);
+                                    break;
+                                case 6:
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation5_4_1, team.Players);
+                                    break;
+                                case 7:
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_4_2, team.Players);
+                                    break;
+                                case 8:
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation3_5_2, team.Players);
+                                    break;
+                                case 9:
+                                    team.BestTactic = tacticDir.GetTactic(EFormation.Formation4_2_3_1, team.Players);
+                                    break;
+                                default:
+                                    Console.WriteLine("No formation selected...");
+                                    break;
+
+                            }
                             break;
                         case 0:
                             _run = false;
