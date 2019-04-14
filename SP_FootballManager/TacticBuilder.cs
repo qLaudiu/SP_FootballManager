@@ -76,9 +76,7 @@ namespace SP_FootballManager
                         break;
 
                     default:
-                        throw new Exception("Error. There is no such formation.");
-                        
-
+                    throw new Exception("Error. There is no such formation.");
                 }
             
         }
@@ -88,8 +86,11 @@ namespace SP_FootballManager
             //Presupunem ca primesc o lista valida de 11 playeri dintre care am cel putini 2 GK si lista este sortata in functie de scorul jucatorilor
             //Pun toti jucatorii in lista de subtitutes astfel ca atunci cand mut jucatorii in formatie cei nemutati raman direct in substitutes 
 
+            List<Player> defPlayers = new List<Player>();
+            defPlayers.AddRange(tactic.Substitutes);
+
             bool RedFlagGk = true;
-            foreach (Player player in tactic.Substitutes)
+            foreach (Player player in defPlayers)
             {
                 if (player.Position.Player_role == Role.CB || player.Position.Player_role == Role.LB || player.Position.Player_role==Role.RB)
                 {
@@ -104,7 +105,10 @@ namespace SP_FootballManager
                 }
             }
 
-            foreach (Player player in tactic.Substitutes)
+            List<Player> midPlayers = new List<Player>();
+            midPlayers.AddRange(tactic.Substitutes);
+
+            foreach (Player player in midPlayers)
             {
                 if (player.Position.Player_role == Role.CDM || player.Position.Player_role == Role.LM || player.Position.Player_role == Role.RM ||player.Position.Player_role== Role.CDM)// veriric prin positon 
                 {
@@ -119,7 +123,10 @@ namespace SP_FootballManager
                 }
             }
 
-            foreach (Player player in tactic.Substitutes)
+            List<Player> atkPlayers = new List<Player>();
+            atkPlayers.AddRange(tactic.Substitutes);
+
+            foreach (Player player in atkPlayers)
             {
                 if (player.Position.Player_role == Role.SS || player.Position.Player_role == Role.CF)
                 {
@@ -134,7 +141,10 @@ namespace SP_FootballManager
                 }
             }
 
-            foreach (Player player in tactic.Substitutes)
+            List<Player> gkPlayers = new List<Player>();
+            gkPlayers.AddRange(tactic.Substitutes);
+
+            foreach (Player player in gkPlayers)
             {
                 if (player.Position.Player_role == Role.GK)
                 {
@@ -180,13 +190,6 @@ namespace SP_FootballManager
                 SwitchFormation(tactic.formation);
             }
 
-           
-
-
-
         }
-
-
-        
     }
 }
